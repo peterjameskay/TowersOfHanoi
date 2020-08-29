@@ -14,10 +14,10 @@ stacks.append(right_stack)
 # Game Setup:
 num_disks = 0
 
-while num_disks < 3:
-  num_disks = int(input('\nHow many disks do you want to play with?\n'))
-  if num_disks < 3:
-    print('Enter a number greater than or equal to 3\n')
+while num_disks < 3 or num_disks > 20:
+  num_disks = int(input('\nHow many disks do you want to play with?(Max: 20)\n'))
+  if num_disks < 3 or num_disks > 20:
+    print('Enter a number between 3 and 20! Try again!\n')
     continue
 for disk in range(num_disks, 0, -1):
   left_stack.push(disk)
