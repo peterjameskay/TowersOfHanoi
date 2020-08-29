@@ -61,6 +61,6 @@ while right_stack.get_size() != num_disks:
       break
     else:
       print("\n\nInvalid Move. Try Again")
-  print("\n\nYou completed the game in {U} moves, and the optimal number of moves is {O}".format(U = num_user_moves, O = num_optimal_moves))
+print("\n\nYou completed the game in {U} moves, and the optimal number of moves is {O}".format(U = num_user_moves, O = num_optimal_moves))
 
 # The End!
